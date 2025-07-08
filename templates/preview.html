@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Preview</title>
+</head>
+<body>
+    <h1>{{ data.get('name') }}</h1>
+    <p><strong>Email:</strong> {{ data.get('email') }}</p>
+    <p><strong>Phone:</strong> {{ data.get('phone') }}</p>
+
+    <h3>Skills</h3>
+    <p>{{ data.get('skills') }}</p>
+
+    <h3>Experience</h3>
+    <p>{{ data.get('experience') }}</p>
+
+    <h3>Education</h3>
+    <p>{{ data.get('education') }}</p>
+    
+</body>
+</html>
