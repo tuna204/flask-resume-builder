@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Builder</title>
+</head>
+<body>
+    <h2>Enter Your Resume Details</h2>
+    <form method="POST">
+        <label>Name:</label><br>
+        <input type="text" name="name"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <label>Phone:</label><br>
+        <input type="text" name="phone"><br><br>
+
+        <label>Skills:</label><br>
+        <textarea name="skills"></textarea><br><br>
+
+        <label>Experience:</label><br>
+        <textarea name="experience"></textarea><br><br>
+
+        <label>Education:</label><br>
+        <textarea name="education"></textarea><br><br>
+
+        <button type="submit" formaction="/preview">Preview Resume</button>
+        <button type="submit" formaction="/download">Download PDF</button>
+
+    </form>
+</body>
+</html>
