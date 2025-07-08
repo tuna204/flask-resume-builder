@@ -7,15 +7,22 @@
     <h1>{{ data.get('name') }}</h1>
     <p><strong>Email:</strong> {{ data.get('email') }}</p>
     <p><strong>Phone:</strong> {{ data.get('phone') }}</p>
-
-    <h3>Skills</h3>
-    <p>{{ data.get('skills') }}</p>
-
-    <h3>Experience</h3>
-    <p>{{ data.get('experience') }}</p>
-
-    <h3>Education</h3>
-    <p>{{ data.get('education') }}</p>
+    <p><strong>Skills:</strong> {{ data.get('skills') }}</p>
+    <p><strong>Experience:</strong> {{ data.get('experience') }}</p>
+    <p><strong>Education:</strong> {{ data.get('education') }}</p>
+    
+    <hr>
+    
+    <form method="POST" action="/download">
+        <input type="hidden" name="name" value="{{ data.get('name') }}">
+        <input type="hidden" name="email" value="{{ data.get('email') }}">
+        <input type="hidden" name="phone" value="{{ data.get('phone') }}">
+        <input type="hidden" name="skills" value="{{ data.get('skills') }}">
+        <input type="hidden" name="experience" value="{{ data.get('experience') }}">
+        <input type="hidden" name="education" value="{{ data.get('education') }}">
+    
+        <button type="submit">Download as PDF</button>
+    </form>
     
 </body>
 </html>
