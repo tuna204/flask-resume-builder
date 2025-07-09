@@ -12,8 +12,8 @@ def preview():
     data = request.form
     return render_template('preview.html', data=data)
 
-path_wkhtmltopdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'  # use your actual path
-config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf)
+config = pdfkit.configuration(wkhtmltopdf='/usr/bin/wkhtmltopdf')
+
 
 @app.route('/download', methods=['POST'])
 def download():
