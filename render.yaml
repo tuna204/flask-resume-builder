@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: flask-resume-builder
+    env: python
+    buildCommand: |
+      apt-get update && \
+      apt-get install -y wkhtmltopdf
+    startCommand: gunicorn app:app
+    region: oregon
+    plan: free
+
+
+
+
+Add render.yaml for PDF support on Render
