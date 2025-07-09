@@ -1,2 +1,4 @@
 Flask
 pdfkit
+Jinja2
+gunicorn
